@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>ScriptionHub | Loryn Chen</title>
+		<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"/>
+		<link rel="shortcut icon" href="../Imgs/Favicon/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="../Imgs/Favicon/favicon.ico" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:600,800" rel="stylesheet">
+        <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+		<link rel="stylesheet" href="../CSS/style.css" type="text/css" />
+
+		<!-- Social media thumbnail -->
+    <link rel="image_src" href="../Imgs/About/headshot.jpg" />
+    <meta name="description" content="Hello, I'm Loryn. I design products and brands." />
+
+    <!-- Open Graph data thumbnail -->
+    <meta property="og:title" content="Loryn Chen" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.lorynchen.com" />
+    <meta property="og:image" content="../Imgs/About/headshot.jpg" />
+    <meta property="og:description" content="Hello, I'm Loryn. I design products and brands." />
+    <meta property="og:site_name" content="Loryn Chen" />
+    <meta property="og:locale" content="en_US" />
+	</head>
+
+	<body>
+<!-- GOOGLE ANALYTICS START -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-72825613-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+<!-- GOOGLE ANALYTICS END -->
+        <div class="navbar">
+            <div class="container">
+                <a href="../index.html" class="nav-link left my-name">Loryn Chen</a>
+                <a href="../HTML/about.html" class="nav-link right">About</a>
+                <a href="../index.html" class="nav-link right"><u>Portfolio</u></a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="intro">
+                <h1>
+                    <span class="extrabold">ScriptionHub</span>
+                    <br>
+                    <span class="light-text">Project - UI, UX</span>
+                </h1>
+                <p>ScriptionHub is a responsive web app that allows people to manage their subscriptions. At Johns Hopkins University’s hackathon, I had the opportunity of working with 1 front end developer and 1 back end developer. I was in charge of designing the overall product.</p>
+            </div>
+        </div>
+        <div class="full-width">
+            <img src="../Imgs/ScriptionHub/cover-photo.jpg" class="full-img">
+        </div>
+        <div class="container">
+            <div class="content">
+                <h2>The Beginning</h2>
+                <p>Like most people, my 2 friends and I came into the hackathon hungry and excited, but we didn’t know what to build. We took our seats for opening ceremonies and one of my friends got an email notifying him of his Dropbox Pro account renewal. That’s when he said that he’d wish there was a way to manage his subscriptions. And that’s where we got the idea for ScriptionHub!</p>
+                <img src="../Imgs/ScriptionHub/beginning.png">
+                <h2>The Problem We Were Trying to Solve</h2>
+                <p>There are many money management apps and banking apps out there that help people keep track of their spendings. However, none of them provide an easy way to manage their recurring payments. This is problematic because people lose track of their spendings. To view the past subscription orders, they would have to go to the respective businesses’ website, and sometimes, their website would not even display it. This is very tedious and annoying; the fact that they have to jump around websites just to view each individual subscription.</p>
+                <img src="../Imgs/ScriptionHub/problems.png">
+                <h2>Initial Problem We Faced Along the Way</h2>
+                <p>The problem we faced from the start was that “Given the 24 hour time constraint of the hackathon, <i>how do we prioritize the steps in product design to ensure that this product is valuable - and if it is, how do we build it in an efficient manner?</i>”</p>
+                <p>This was my first time doing product design at a hackathon so I talked to a UX Designer at <a href="https://www.missiondata.com/" target="_blank"><u>MissionData</u></a> (one of the sponsors) about my current dilemma. He gave me some wonderful advice, in which his main point was for me to not be afraid to trust my intuition. I came up with the following steps for myself to make sure our product would be something worth using:</p>
+                <ol>
+                    <li>Start off by interviewing a few people to validate our ideas</li>
+                    <li>Analyze the research findings</li>
+                    <li>Present analyzation to the team and come up with a solution</li>
+                    <li>Make quick low fidelity mockups of the screens</li>
+                    <li>Come up with a name and visual identity</li>
+                    <li>Make high fidelity mockups</li>
+                    <li>Prototype</li>
+                </ol>
+                <h2>Interviews and Analyzation</h2>
+                <ol>
+                    <li>
+                        <span class="extrabold">How often do you check your spendings and how do you do it?</span>
+                        <br>
+                        People check their spendings 5-10 times a week. 4 out of the 5 people we interviewed said that they check via their bank’s app. They do quick checks on their mobile devices, however, if they want to some more in-depth tracking or to fix some issues, they go on their desktop.
+                    </li>
+                    <li>
+                        <span class="extrabold">How do you track your subscriptions?</span>
+                        <br>
+                        The 25 year old SWE keeps track of them himself via Google Sheets. The rest either tracks their subscriptions via their bank statements, which is unorganized, or goes to the businesses website under their account settings. One of the hackers mentioned a new startup called Truebill that is a software to keep track and manage all of your subscriptions. Once we heard of this, our team quickly googled Truebill and jumped to their website. They were still in beta at the time so we could not test out their software. Because of this, we still stuck with building out our product.
+                    </li>
+                    <li>
+                        <span class="extrabold">Would it make your life easier if you had a platform that helps you keep track of all your recurring payments? How so?</span>
+                        <br>
+                        All of them said yes. It would make their lives easier because they wouldn’t have to go to multiple websites and/or apps to manage their subscriptions. It would all be on one centralized location.
+                    </li>
+                    <li>
+                        <span class="extrabold">Would you use said platform? Why or why not?</span>
+                        <br>
+                        2 out of the 5 were uneasy about using another banking app. They said they have used so many in the past, it feels uncomfortable connecting their bank to a new software. The rest said yes, they would love to use this app because it would be easier to manage their subscriptions.
+                    </li>
+                    <li>
+                        <span class="extrabold">How do you cancel your subscriptions?</span>
+                        <br>
+                        Everyone cancels their subscriptions by going to the businesses website.
+                    </li>
+                </ol>
+                <h3>The most important takeaways are that:</h3>
+                <ul>
+                    <li>People are annoyed by having to go to the respective businesses’ website to manage their recurring payments or having an unorganized view of their subscriptions on their bank statements.</li>
+                    <li>People use their mobile devices for quick tracking of their spendings and desktops for more in depth checking.</li>
+                    <li>People want a software platform that is trustworthy.</li>
+                    <li>People want a more pleasant and easier way of cancelling their subscriptions.</li>
+                </ul>
+                <h2>The Solution</h2>
+                <p>To address the above needs, we would use Capital One’s API (they released one for the hackathon) to develop an application to help people keep track of their subscription payments and cancel them anytime, all on one platform. The app needs to have simple yet strong visual design to evoke trust and assurance. We would be developing a responsive web application so people can check on both desktop and mobile devices. We didn’t plan on creating a mobile app as well because we knew we wouldn’t have enough time.</p>
+                <h2>Another Problem We Faced</h2>
+                <p>We quickly realized that canceling subscriptions is not as simple as the press of a third party button. We thought we could do something on the back end where if you tap a cancel button of a subscription, it would connect to the service’s website, specifically the account settings part, and cancel, all in the span of a few seconds done under the hood. This ended up being way to technically complex, as there are millions of services out there. We ended up not implementing the feature to cancel a subscription and just branded ourselves as an app to manage all of your subscriptions.</p>
+                <h2>Low Fidelity Wireframe</h2>
+                <img src="../Imgs/ScriptionHub/lowfi.png">
+                <h2>Establishing our Name and Visual Design</h2>
+                <p>We didn’t want to waste too much time on this part as we still had a lot of things to do. The 3 of us sat down for about 20 min to come up with a name. We played around with so many words and ended up with ScriptionHub. For the logo, it was nothing fancy, just a logotype using the Avenir typeface. After playing around with a few different color schemes, we ended up going with blue and white. All of this is to convey trust and authenticity with this application so people will feel safer using this app.</p>
+                <img src="../Imgs/ScriptionHub/brand.jpg">
+                <h2>High Fidelity Mockups (Web)</h2>
+                <p>I utilized cards for the subscriptions to allow the user to better classify and group the different types of information with each other. I also toned down on the use of color to add extra emphasis on the logos of the services to provide an easier browsing experience for the user.</p>
+                <img src="../Imgs/ScriptionHub/hifi/web/main-dashboard.png">
+                <p class="caption">Main dashboard of the app</p>
+                <br>
+                <br>
+                <img src="../Imgs/ScriptionHub/hifi/web/monthly-summary.png">
+                <p class="caption">Monthly Summary page</p>
+                <br>
+                <br>
+                <img src="../Imgs/ScriptionHub/hifi/web/netflix-page.png">
+                <p class="caption">Business subscription page</p>
+                <h2>High Fidelity Mockups (Mobile)</h2>
+                <br>
+                <img src="../Imgs/ScriptionHub/hifi/mobile/three-screens.png">
+                <h2>Prototype</h2>
+                <div class="media">
+                    <iframe class="youtube-vid" src="https://www.youtube.com/embed/MYkv7XJ2wVg" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <h2>Key Takeaways</h2>
+                <p>In the end, we did not end up finish building the full product in time. Even though we didn't finish, I'm still very proud of the work my team and I have accomplished in the 24 hours. We gained new knowledge on how to manage our time along with prioritizing the different tasks we had, given the time constraint of the hackathon. This was my first time designing a product at a hackathon and it was a lovely experience for me, as I was designing on the clock; which pushed me to work faster and more efficient.</p>
+                <div class="bottom-nav">
+                    <a href="tenable.html"><h3 class="bottom-nav-link left">&#8592; Tenable</h3></a>
+                    <a href="pixity.html"><h3 class="bottom-nav-link right">Pixity &#8594;</h3></a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <a href="https://twitter.com/LoloLoryn" target="_blank">
+                    <img src="../Imgs/Footer/twitter.svg" class="social-icon">
+                </a>
+                <a href="https://dribbble.com/lorynchen" target="_blank">
+                    <img src="../Imgs/Footer/dribbble.svg" class="social-icon">
+                </a>
+                <a href="https://medium.com/@lorynchen" target="_blank">
+                    <img src="../Imgs/Footer/medium.svg" class="social-icon">
+                </a>
+                <a href="https://www.linkedin.com/in/lorynchen" target="_blank">
+                    <img src="../Imgs/Footer/linkedin.svg" class="social-icon">
+                </a>
+            </div>
+        </footer>
+	</body>
+</html>
