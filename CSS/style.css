@@ -1,8 +1,31 @@
+.error-bg {
+    background-color: #798DA2;
+}
+
+.error-content p {
+    color: #ffffff;
+}
+
+.error-content a {
+    color: #ffffff;
+}
+
+.error-content h2 {
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
 body {
     margin: 0;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 600;
     background-color: #ffffff;
+}
+
+.border {
+    border: .25px solid #e5e5e5;
 }
 
 .navbar {
@@ -219,6 +242,32 @@ img.half-img {
 }
 
 @media screen and (min-width: 960px) {
+    .error-div {
+        margin-top: 15%;
+    }
+
+    .error-content {
+        width: 50%;
+        display: inline-block;
+        font-family: 'Nunito Sans', sans-serif;
+        text-align: left;
+        letter-spacing: .5px;
+    }
+
+    .error-content h1 {
+        font-size: 7em; 
+        color: #ffffff;
+        margin-bottom: 0;
+    }
+    
+    .error-img {
+        float: right;
+    }
+    
+    .error-text {
+        float: left;
+    }
+    
     body {
         padding: 0 0 4em 0;
     }
@@ -338,6 +387,24 @@ img.half-img {
 }
 
 @media screen and (min-width: 540px) and (max-width: 959px) {
+    .error-div {
+        margin-top: 1%;
+    }
+
+    .error-content {
+        width: 51%;
+        display: inline-block;
+        font-family: 'Nunito Sans', sans-serif;
+        text-align: center;
+        letter-spacing: .5px;
+    }
+
+    .error-content h1 {
+        font-size: 7em; 
+        color: #ffffff;
+        margin-bottom: 0;
+    }
+    
     body {
         padding: 0 0 3em 0;
     }
@@ -464,6 +531,24 @@ img.half-img {
 }
 
 @media screen and (max-width: 539px) {
+    .error-div {
+        margin-top: 1%;
+    }
+
+    .error-content {
+        width: 80%;
+        display: inline-block;
+        font-family: 'Nunito Sans', sans-serif;
+        text-align: center;
+        letter-spacing: .5px;
+    }
+
+    .error-content h1 {
+        font-size: 5em; 
+        color: #ffffff;
+        margin-bottom: 0;
+    }
+    
     body {
         padding: 0 0 2em 0;
     }
