@@ -323,13 +323,6 @@ img.half-img {
         margin: 0 1em 2em 1em;
     }
     
-    .yelp-badge {
-        width: 90px;
-        height: auto;
-        float: left;
-        margin-top: 10px;
-    }
-    
     .about-text {
         width: 660px;
         margin: 0 1em 5em 1em;
@@ -466,13 +459,6 @@ img.half-img {
         width: 220px;
         margin: 0 1em 2em 1em;
         float: none;
-    }
-    
-    .yelp-badge {
-        width: 80px;
-        height: auto;
-        float: none;
-        margin-top: 10px;
     }
     
     .about-text {
@@ -617,13 +603,6 @@ img.half-img {
         width: 220px;
         margin: 0 1em 2em 1em;
         float: none;
-    }
-    
-    .yelp-badge {
-        width: 70px;
-        height: auto;
-        float: none;
-        margin-top: 10px;
     }
     
     .about-text {
