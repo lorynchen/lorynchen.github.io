@@ -1,89 +1,446 @@
 html, body {
-	background-color: #111111;
-	color: #ffffff;
+	background-color: #F3F1EF;
+	color: #222222;
 	font-family: 'IBM Plex Sans', sans-serif;
 	font-weight: 400;
 }
 
 ::-moz-selection {
-	background-color: #ffffff;
-	color: #111111;
+	background-color: #222222;
+	color: #ffffff;
 }
 
 ::selection {
-	background-color: #ffffff;
-	color: #111111;
+	background-color: #222222;
+	color: #ffffff;
 }
 
 .container {
-	width: 40%;
-	max-width: 600px;
-	margin: auto;
+    padding: 2rem;
 }
 
-.section {
-	margin: 10rem 0;
-	font-weight: 400;
-	letter-spacing: .5px;
-	line-height: 1.8;
+.navbar-brand {
+    color: #222222;
 }
 
-.serif {
-	font-family: 'IBM Plex Serif', serif;
+.navbar-brand:hover {
+    color: #777777;
 }
 
-.bold {
-	font-weight: 700;
+.btn {
+    color: #222222;
+    border: none;
+    background-color: transparent;
+    padding-left: 1.5rem;
 }
 
-.regular {
-	font-weight: 400;
+.btn:hover {
+    color: #777777;
+    border: none;
+    background-color: transparent;
 }
 
-.opacity-point-seven {
-	opacity: .7;
+h1 {
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+h2 {
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+h4 {
+    font-size: .8rem;
 }
 
 a {
-	text-decoration: underline;
-	color: #ffffff;
-	-webkit-transition: all .3s ease-in-out;
-	transition: all .3s ease-in-out;
+    color: #222222;
+    text-decoration: underline;
+    transition: all .3s ease-in-out;
 }
 
 a:hover {
-	color: #f42a56;
-	opacity: 1;
+    color: #999999;
+    transition: all .3s ease-in-out;
 }
 
-.header {
-	letter-spacing: 3px;
-	opacity: .6;
+a:visited {
+    color: #222222;
 }
 
-ul {
-	list-style: none;
-	padding-left: 0;
+.gray-text {
+    color: #999999;
 }
 
-
-.half-col{
-	width: 49%;
-	display: inline-block;
-	vertical-align: top;
+.red-text {
+    color: #F42A56;
 }
 
-.footer {
-	opacity: .5;
-	letter-spacing: 1px;
+.white-bg {
+    background-color: #ffffff;
 }
 
-@media screen and (max-width: 840px) {
-	.container {
-		width: 90%;
-	}
-	
-	.section {
-		margin: 5rem 0;
-	}
+.work-card {
+    margin: 0 auto 1rem;
+    width: 98vw;
+    max-width: 960px;
+    border-radius: 8px;
+    transition: all .3s ease-in-out;
+}
+
+.work-card:hover {
+    -webkit-box-shadow: 0px 0px 16px 8px rgba(64,59,50,0.24);
+    -moz-box-shadow: 0px 0px 16px 8px rgba(64,59,50,0.24);
+    box-shadow: 0px 0px 16px 8px rgba(64,59,50,0.24);
+    transition: all .3s ease-in-out;
+    transform: scale(1.02);
+}
+
+p {
+    color: #222222;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-weight: 400;
+    font-size: 1rem;
+    margin: .4rem 0;;
+}
+
+.tags {
+    font-size: .8rem;
+    color: #999999;
+}
+
+.work-card a {
+    text-decoration: none;
+}
+
+.work-card a:hover {
+    color: #222222;
+}
+
+.work-card a:visited {
+    color: #222222;
+}
+
+.xs-space {
+    height: 1rem;
+}
+
+.sm-space {
+    height: 2rem;
+}
+
+.md-space {
+    height: 4rem;
+}
+
+.lg-space {
+    height: 8rem;
+}
+
+.xl-space {
+    height: 12rem;
+}
+
+footer {
+    margin-top: 4rem;
+}
+
+.project-intro h1 {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    margin-bottom: .4rem;
+}
+
+.project-intro p {
+    margin: 0 auto;
+    font-size: 1rem;
+}
+
+ul, ol {
+    font-size: 1rem;
+    list-style-position: outside;
+    margin-left: 1rem;
+    padding-left: 1rem;
+}
+
+.project-link {
+    padding: 1rem 0;
+}
+
+.metadata p{
+    font-size: .8rem;
+}
+
+.figure-caption {
+    color: #999999;
+}
+
+figure {
+    margin: 0;;
+}
+
+.subtitle {
+    color: #999999;
+}
+
+.title {
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: 900;
+}
+
+.divider {
+    border-color: #999999;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.callout-section {
+    background-color: #E8E2DC;
+    padding: 2rem 0;
+}
+
+.callout-section h1 {
+    line-height: 1.5;
+}
+
+.kpi {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #1DC990;
+}
+
+.list-type-alpha {
+    list-style-type: upper-alpha;
+}
+
+blockquote {
+    border-color: #999999;
+}
+
+.about-hero h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.about-hero h2 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.contact a {
+    text-decoration: none;
+}
+
+.error-404 h1{
+    font-size: 1.8rem;
+}
+
+/* MEDIA QUERY MD */
+@media only screen and (max-width: 840px) {
+    .sm-space {
+        height: 1.5rem;    
+    }
+    
+    .md-space {
+        height: 2.5rem;
+    }
+    
+    .lg-space {
+        height: 4rem;
+    }
+    
+    .xl-space {
+        height: 6rem;
+    }
+    
+    .pro-pic {
+        margin: 3rem auto;
+    }
+}
+
+/* MEDIA QUERY XS-SM */ 
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .btn {
+        padding-left: .5rem;
+    }
+    
+    h2 {
+        line-height: 1.4;
+    }
+    
+    h4 {
+        line-height: 1.5;
+    }
+    
+    p {
+        font-size: .8rem;
+        line-height: 1.5;
+    }
+    
+    footer a {
+        line-height: 1.6rem;
+    }
+    
+    .project-intro h1 {
+        font-size: 1rem;
+    }
+    
+    .project-intro p {
+        font-size: .8rem;
+    }
+    
+    .metadata p{
+        font-size: .6rem;
+    }
+    
+    ul, ol {
+        font-size: .8rem;
+        margin-left: .5rem;
+        padding-left: .5rem;
+    }
+    
+    .kpi {
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+    
+    .about-hero h1 {
+        font-size: 1.2rem;
+        margin: 0;
+    }
+
+    .about-hero h2 {
+        font-size: 1rem;
+        margin: 0;
+    }
+    
+    .error-404 h1 {
+        font-size: 1.4rem;
+    }
+    
+    /* HAMBURGER MENU START */ 
+    .header {
+        background-color: transparent;
+        width: 100%;
+        z-index: 3;
+    }
+
+    .header ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+        background-color: #fff;
+    }
+
+    .header li a {
+        display: block;
+        padding: 1rem;
+        text-decoration: none;
+    }
+
+    .header li a:hover,
+    .header .menu-btn:hover {
+        background-color: #333333;
+    }
+
+    .header .logo {
+        display: block;
+        float: left;
+        font-size: 1em;
+        padding: 15px 0;
+        text-decoration: none;
+    }
+
+    /* menu */
+    .header .menu {
+        clear: both;
+        max-height: 0;
+        transition: max-height .2s ease-out;
+        background-color: #222222;
+    }
+
+    .menu li a {
+        color: #ffffff;
+    }
+
+    /* menu icon */
+    .header .menu-icon {
+        cursor: pointer;
+        display: inline-block;
+        float: right;
+        padding: 28px 0px 28px 20px;
+        position: relative;
+        user-select: none;
+    }
+
+    .header .menu-icon .navicon {
+        background: #222222;
+        display: block;
+        height: 2px;
+        position: relative;
+        transition: background .2s ease-out;
+        width: 24px;
+    }
+
+    .header .menu-icon .navicon:before,
+    .header .menu-icon .navicon:after {
+        background: #222222;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+
+    .header .menu-icon .navicon:before {
+        top: 8px;
+    }
+
+    .header .menu-icon .navicon:after {
+        top: -8px;
+    }
+
+    /* menu btn */
+    .header .menu-btn {
+        display: none;
+    }
+
+    .header .menu-btn:checked ~ .menu {
+        max-height: 240px;
+    }
+
+    .header .menu-btn:checked ~ .menu-icon .navicon {
+        background: transparent;
+    }
+
+    .header .menu-btn:checked ~ .menu-icon .navicon:before {
+        transform: rotate(-45deg);
+    }
+
+    .header .menu-btn:checked ~ .menu-icon .navicon:after {
+        transform: rotate(45deg);
+    }
+
+    .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+    .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+        top: 0;
+    }
+    /* HAMBURGER MENU END */ 
 }

@@ -3,42 +3,58 @@
 	<head>
 		<title>Loryn Chen</title>
 		<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"/>
-		<link rel="apple-touch-icon" sizes="180x180" href="/Assets/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/Assets/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/Assets/favicon-16x16.png">
-		<link rel="manifest" href="/Assets/site.webmanifest">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700|IBM+Plex+Serif:400,700&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="CSS/style.css" type="text/css" />
+        
+        <!-- Spectre Framework -->
+        <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+        
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-VhBcF/php0Z/P5ZxlxaEx1GwqTQVIBu4G4giRWxTKOCjTxsPFETUDdVL5B6vYvOt" crossorigin="anonymous">
+        
+        <!-- Animate on Scroll Library CSS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        
+        <!-- Favicon -->
+		<link rel="apple-touch-icon" sizes="180x180" href="./Assets/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./Assets/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./Assets/favicon-16x16.png">
+		<link rel="manifest" href="./Assets/site.webmanifest">
+        
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700|IBM+Plex+Serif:400,700&display=swap" rel="stylesheet">
+        
+        <!-- My CSS File -->
+		<link rel="stylesheet" href="./CSS/style.css" type="text/css" />
 		
 		<!-- social media thumbnail -->
-		<link rel="image_src" href="/Assets/social-media-thumbnail.png" />
-    <meta name="description" content="Hey, I'm Loryn. Currently a UX Designer at Walmart on the Grocery team." />
+		<link rel="image_src" href="./Assets/social-media-thumbnail.png" />
+        <meta name="description" content="Hey, I'm Loryn. A Product Designer focused on visual and interaction design." />
 		
 		<!-- Open Graph data thumbnail -->
 		<meta property="og:title" content="Loryn Chen" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://lorynchen.com" />
-    <meta property="og:image" content="/Assets/social-media-thumbnail.png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:width" content="630" />
-    <meta property="og:description" content="Hey, I'm Loryn. Currently a UX Designer at Walmart on the Grocery team." />
-    <meta property="og:site_name" content="Loryn's Portfolio" />
-    <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://lorynchen.com" />
+        <meta property="og:image" content="./Assets/social-media-thumbnail.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:width" content="630" />
+        <meta property="og:description" content="Hey, I'm Loryn. A Product Designer focused on visual and interaction design." />
+        <meta property="og:site_name" content="Loryn's Portfolio" />
+        <meta property="og:locale" content="en_US" />
 
 		<!-- Twitter Card -->
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@LoloLoryn">
 		<meta name="twitter:title" content="Loryn Chen">
-		<meta name="twitter:description" content="Hey, I'm Loryn. Currently a UX Designer at Walmart on the Grocery team.">
-		<meta name="twitter:image" content="/Assets/social-media-thumbnail.png">
-		
+		<meta name="twitter:description" content="Hey, I'm Loryn. A Product Designer focused on visual and interaction design.">
+		<meta name="twitter:image" content="./Assets/social-media-thumbnail.png">
 	</head>
 	
 	<body>
-		<!-- GOOGLE ANALYTICS START -->
-		<script>
+		
+        <!-- GOOGLE ANALYTICS START -->
+		
+        <script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -47,60 +63,148 @@
 			ga('create', 'UA-72825613-1', 'auto');
 			ga('send', 'pageview');
 		</script>
+        
 		<!-- GOOGLE ANALYTICS END -->
+
+        <!-- NAVBAR START -->
+        
+        <div class="container grid-lg">
+            
+            <!-- Medium+ -->
+            <header class="navbar hide-sm">
+                <section class="navbar-section">
+                    <a href="https://lorynchen.com" class="navbar-brand mr-2" title="Hi">Loryn Chen</a>
+                </section>
+                <section class="navbar-section">
+                    <a href="https://lorynchen.com" class="btn" title="You're on this page!">Work</a>
+                    <a href="./HTML/about.html" class="btn" title="Learn more about me">About</a>
+                    <a href="./Assets/loryn-resume.pdf" class="btn" target="_blank" title="Look! I'm professional">Resume <i class="far fa-external-link-square"></i></a>
+                </section>
+            </header>
+            
+            <!-- SMALL- -->
+            <header class="header show-sm">
+                <a href="https://lorynchen.com" class="logo">Loryn Chen</a>
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="menu">
+                    <li><a href="https://lorynchen.com">Work</a></li>
+                    <li><a href="./HTML/about.html">About</a></li>
+                    <li><a href="./Assets/loryn-resume.pdf" target="_blank">Resume <i class="far fa-external-link-square"></i></a></li>
+                </ul>
+            </header>
+        </div>
+        
+        <!-- NAVBAR END -->
+
+
+        <!-- HERO START -->
+        
+        <div class="container grid-lg">
+            <div class="columns">
+                <div class="column col-md-12 col-8">
+                    <div class="hero">
+                        <h1 class="red-text">Hey, I'm Loryn.</h1>
+                        <h2>A Product Designer focused on visual and interaction design. Looking for my next opportunity!</h2>
+                        <h4>Previously at <a href="https://www.walmartlabs.com/" target="_blank" title="Visit Walmart Lab's website">Walmart</a> working on the future of grocery.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- HERO END -->
 		
-		<div class="container">
-			<div class="section serif">
-				<h2>Hey, I'm Loryn.</h2>
-				<br>
-				<h2 class="regular">A Product Designer at <a href="https://walmartlabs.com" class="bold" target="_blank" title="Visit Walmart Labs' homepage">Walmart</a> working on the Grocery team. I design tools that help store associates fulfill online orders.</h2>
-				<br>
-				<h2 class="regular">On the side, I run an Instagram page called <a href="https://instagram.com/hackuniversity" class="bold" target="_blank" title="Visit our Instagram page">Hack University</a> with my brother. We make custom tech and design content.</h2>
-			</div>
-			
-			<div class="section">
-				&mdash;
-			</div>
-			
-			<div class="section opacity-point-seven">
-				<p class="header">OTHER THINGS</p>
-				<h2 class="regular">I create design videos on <a href="https://youtube.com/lorynchen" target="_blank" title="Visit my YouTube channel">YouTube</a>, write on <a href="https://medium.com/@lorynchen" target="_blank" title="Visit my Medium blog">Medium</a>, share thoughts on <a href="https://linkedin.com/in/lorynchen" target="_blank" title="Visit my LinkedIn profile">LinkedIn</a>, and post content on <a href="https://instagram.com/hackuniversity" target="_blank" title="Visit Hack University's Instagram page">Instagram</a>.</h2>
-				<br>
-				<h2 class="regular">I also write food reviews on both <a href="https://lorynchen.yelp.com" target="_blank" title="Read my Yelp reviews">Yelp</a> and <a href="https://goo.gl/maps/XczYDVbetAj9txbf7" target="_blank" title="Read my Google reviews">Google</a>.</h2>
-				<br>
-				<h2 class="regular">Maybe you've seen some of my stuff!</h2>
-			</div>
-			
-			<div class="section opacity-point-seven">
-				<p class="header">LET'S CONNECT</p>
-				<div class="half-col">
-					<h2 class="regular">
-						<ul>
-							<li><a href="https://youtube.com/lorynchen" target="_blank" title="Visit my YouTube channel">YouTube</a></li>
-							<li><a href="https://medium.com/@lorynchen" target="_blank" title="Visit my Medium blog">Medium</a></li>
-							<li><a href="https://twitter.com/lololoryn" target="_blank" title="Visit my Twitter page">Twitter</a></li>
-							<li><a href="https://linkedin.com/in/lorynchen" target="_blank" title="Visit by LinkedIn profile">LinkedIn</a></li>
-							<li><a href="https://instagram.com/hackuniversity" target="_blank" title="Visit Hack University's Instagram page">Instagram</a></li>
-							<li><a href="https://dribbble.com/lorynchen" target="_blank" title="Visit my Dribbble page">Dribbble</a></li>
-						</ul>
-					</h2>
-				</div>
-				<div class="half-col">
-					<h2 class="regular">
-						<ul>
-							<li><a href="/Assets/loryn-resume.pdf" target="_blank" title="View my resume">Resume</a></li>
-							<li><a href="mailto:loryn.chen@gmail.com" target="_blank" title="Send me some love">Email</a></li>
-						</ul>
-					</h2>
-				</div>
-			</div>
-			
-			<div class="footer">
-				<p class="regular">&copy; Loryn Chen 2020</p>
-				<br>
-			</div>
-		</div>
-	
+        <!-- WORK START -->
+        
+        <div class="work-card">
+            <a href="./HTML/bmb.html">
+                <div class="container grid-lg">
+                    <div class="columns">
+                        <div class="column col-md-12 col-8">
+                            <img src="./Assets/BMB/thumbnail-bmb.png" class="img-responsive" alt="Boba Meets Bagel responsive web app mockups">
+                        </div>
+                        <div class="column col-md-12 col-4">
+                            <div class="xs-space"></div>
+                            <h1>Boba Meets Bagel Dating App</h1>
+                            <p>Connecting Asians through a niche dating app.</p>
+                            <p class="tags">UI/UX, research, branding</p>
+                            <p class="red-text">Read case study</p>
+                        </div>
+                    </div>
+
+                </div>
+            </a>
+        </div>
+        
+        <div class="work-card">
+            <a href="./HTML/walmart-express.html">
+                <div class="container grid-lg">
+                    <div class="columns">
+                        <div class="column col-md-12 col-8">
+                            <img src="./Assets/Walmart-express/thumbnail-express.png" class="img-responsive" alt="Walmart's associate experience for express fulfillment mockups">
+                        </div>
+                        <div class="column col-md-12 col-4">
+                            <div class="xs-space"></div>
+                            <h1>Walmart Express Delivery</h1>
+                            <p>Providing a speedier delivery service to customers.</p>
+                            <p class="tags">Work, UI/UX, research</p>
+                            <p class="red-text">Read case study</p>
+                        </div>
+                    </div>
+
+                </div>
+            </a>
+        </div>
+        
+        <div class="work-card">
+            <a href="./HTML/walmart-split.html">
+                <div class="container grid-lg">
+                    <div class="columns">
+                        <div class="column col-md-12 col-8">
+                            <img src="./Assets/Walmart-Split/thumbnail-split.png" class="img-responsive" alt="Walmart's associate experience for splitting orders mockups">
+                        </div>
+                        <div class="column col-md-12 col-4">
+                            <div class="xs-space"></div>
+                            <h1>Walmart Split Orders</h1>
+                            <p>Requesting an additional driver for large deliveries.</p>
+                            <p class="tags">Work, UI/UX, research</p>
+                            <p class="red-text">Read case study</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+        <!-- WORK END -->
+        
+        <!-- FOOTER START -->
+        
+        <footer>
+            <div class="container grid-lg">
+                <p>
+                    <a href="https://twitter.com/LoloLoryn" target="_blank" title="Tweet at me!">Twitter</a> &#9702; <a href="https://dribbble.com/lorynchen" target="_blank" title="Like one of my shots!">Dribbble</a> &#9702; <a href="https://medium.com/@lorynchen" target="_blank" title="Read one of my articles!">Medium</a> &#9702; <a href="https://www.linkedin.com/in/lorynchen/" target="_blank" title="Let's connect!">LinkedIn</a> &#9702; <a href="https://www.youtube.com/lorynchen" target="_blank" title="Watch my design videos!">YouTube</a>
+                </p>
+                <br>
+                <p class="gray-text hide-sm">&copy; 2020 Loryn Chen - Built with &hearts; by yours truly</p>
+                <div class="show-sm">
+                        <p class="gray-text">Built with &hearts; by yours truly</p>
+                        <p class="gray-text">&copy; 2020 Loryn Chen</p>
+                    </div>
+            </div>
+        </footer>
+        
+        <!-- FOOTER END -->
+        
+        <!-- SCRIPTS START -->
+        
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+        <script src="./JS/script.js"></script>
+        
+        <!-- SCRIPT END -->
+        
 	</body>
 	
 	

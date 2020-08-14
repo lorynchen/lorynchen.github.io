@@ -1,44 +1,60 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<title>404 | Loryn Chen</title>
+		<title>Loryn Chen | 404</title>
 		<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"/>
-		<link rel="apple-touch-icon" sizes="180x180" href="/Assets/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/Assets/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/Assets/favicon-16x16.png">
-		<link rel="manifest" href="/Assets/site.webmanifest">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700|IBM+Plex+Serif:400,700&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="CSS/style.css" type="text/css" />
+        
+        <!-- Spectre Framework -->
+        <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+        
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-VhBcF/php0Z/P5ZxlxaEx1GwqTQVIBu4G4giRWxTKOCjTxsPFETUDdVL5B6vYvOt" crossorigin="anonymous">
+        
+        <!-- Animate on Scroll Library CSS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        
+        <!-- Favicon -->
+		<link rel="apple-touch-icon" sizes="180x180" href="./Assets/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./Assets/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./Assets/favicon-16x16.png">
+		<link rel="manifest" href="./Assets/site.webmanifest">
+        
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700|IBM+Plex+Serif:400,700&display=swap" rel="stylesheet">
+        
+        <!-- My CSS File -->
+		<link rel="stylesheet" href="./CSS/style.css" type="text/css" />
 		
 		<!-- social media thumbnail -->
-		<link rel="image_src" href="/Assets/social-media-thumbnail.png" />
-    <meta name="description" content="Hey, I'm Loryn. Currently a UX Designer at Walmart on the Grocery team." />
+		<link rel="image_src" href="./Assets/social-media-thumbnail.png" />
+        <meta name="description" content="Hey, I'm Loryn. A Product Designer focused on visual and interaction design." />
 		
 		<!-- Open Graph data thumbnail -->
 		<meta property="og:title" content="Loryn Chen" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://lorynchen.com" />
-    <meta property="og:image" content="/Assets/social-media-thumbnail.png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:width" content="630" />
-    <meta property="og:description" content="Hey, I'm Loryn. Currently a UX Designer at Walmart on the Grocery team." />
-    <meta property="og:site_name" content="Loryn's Portfolio" />
-    <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://lorynchen.com" />
+        <meta property="og:image" content="./Assets/social-media-thumbnail.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:width" content="630" />
+        <meta property="og:description" content="Hey, I'm Loryn. A Product Designer focused on visual and interaction design." />
+        <meta property="og:site_name" content="Loryn's Portfolio" />
+        <meta property="og:locale" content="en_US" />
 
 		<!-- Twitter Card -->
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@LoloLoryn">
 		<meta name="twitter:title" content="Loryn Chen">
-		<meta name="twitter:description" content="Hey, I'm Loryn. Currently a UX Designer at Walmart on the Grocery team.">
-		<meta name="twitter:image" content="/Assets/social-media-thumbnail.png">
-		
+		<meta name="twitter:description" content="Hey, I'm Loryn. A Product Designer focused on visual and interaction design.">
+		<meta name="twitter:image" content="./Assets/social-media-thumbnail.png">
 	</head>
 	
 	<body>
-		<!-- GOOGLE ANALYTICS START -->
-		<script>
+		
+        <!-- GOOGLE ANALYTICS START -->
+		
+        <script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -47,17 +63,66 @@
 			ga('create', 'UA-72825613-1', 'auto');
 			ga('send', 'pageview');
 		</script>
+        
 		<!-- GOOGLE ANALYTICS END -->
-		
-		<div class="container">
-			<div class="section">
-				<h1 class="serif">404 error code.</h1>
-				<h1 class="serif regular">Oops! This page somehow got lost.</h1>
-				&mdash;
-				<h2 class="regular">&larr; <a href="https://lorynchen.com" title="Head back to my website">Head back to safety</a></h2>
-			</div>
-		</div>
-	
+
+        <!-- NAVBAR START -->
+        
+        <div class="container grid-lg">
+            
+            <!-- Medium+ -->
+            <header class="navbar hide-sm">
+                <section class="navbar-section">
+                    <a href="https://lorynchen.com" class="navbar-brand mr-2" title="Hi">Loryn Chen</a>
+                </section>
+                <section class="navbar-section">
+                    <a href="https://lorynchen.com" class="btn" title="You're on this page!">Work</a>
+                    <a href="./HTML/about.html" class="btn" title="Learn more about me">About</a>
+                    <a href="./Assets/loryn-resume.pdf" class="btn" target="_blank" title="Look! I'm professional">Resume <i class="far fa-external-link-square"></i></a>
+                </section>
+            </header>
+            
+            <!-- SMALL- -->
+            <header class="header show-sm">
+                <a href="https://lorynchen.com" class="logo">Loryn Chen</a>
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="menu">
+                    <li><a href="https://lorynchen.com">Work</a></li>
+                    <li><a href="./HTML/about.html">About</a></li>
+                    <li><a href="./Assets/loryn-resume.pdf" target="_blank">Resume <i class="far fa-external-link-square"></i></a></li>
+                </ul>
+            </header>
+        </div>
+        
+        <!-- NAVBAR END -->
+
+
+        <!-- HERO START -->
+        <div class="sm-space"></div>
+        <div class="container grid-lg error-404" data-aos="zoom-out" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true">
+            <div class="columns">
+                <div class="column col-md-12 col-6">
+                    <p class="subtitle">404 ERROR</p>
+                    <h1>Oops! This page somehow got lost.</h1>
+                    <div class="sm-space"></div>
+                    <p><i class="far fa-arrow-square-left"></i>  <a href="https://lorynchen.com" title="Return back to my homepage">  Head back to safety</a></p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- HERO END -->
+        
+        <!-- SCRIPTS START -->
+        
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+        <script src="./JS/script.js"></script>
+        
+        <!-- SCRIPT END -->
+        
 	</body>
 	
 	
