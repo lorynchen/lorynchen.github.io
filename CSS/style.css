@@ -1,3 +1,7 @@
+html {
+	scroll-behavior: smooth;
+}
+
 html, body {
 	/* background-color: #F3F1EF; */
 	background-color: #111111;
@@ -74,6 +78,10 @@ a:hover {
 
 a:visited {
 	color: #ffffff;
+}
+
+.no-decoration {
+	text-decoration: none;
 }
 
 .hero h1, .hero h2 {
@@ -325,6 +333,19 @@ blockquote {
 
 .active-drop {
 	background-color: #222222 !important;
+}
+
+.process-arrow {
+	-webkit-animation: action .75s infinite  alternate;
+	animation: action .75s infinite  alternate;
+}
+@-webkit-keyframes action {
+		0% { transform: translateY(0); }
+		100% { transform: translateY(-10px); }
+}
+@keyframes action {
+		0% { transform: translateY(0); }
+		100% { transform: translateY(-10px); }
 }
 
 /* MEDIA QUERY MD */
