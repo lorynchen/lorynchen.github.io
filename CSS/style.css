@@ -112,6 +112,10 @@ a:visited {
 	color: #25A966;
 }
 
+.white-text {
+	color: #ffffff;
+}
+
 .white-bg {
 	background-color: #ffffff;
 }
@@ -346,6 +350,41 @@ blockquote {
 @keyframes action {
 		0% { transform: translateY(0); }
 		100% { transform: translateY(-10px); }
+}
+
+.section-header {
+	display: flex;
+  align-items: center;
+	color: #959599;
+	padding: 0;
+}
+
+.section-header:after {
+	content: '';
+  flex: 1;
+  margin-left: 1rem;
+  height: 1px;
+  background-color: #959599;
+}
+
+.chip {
+	background-color: #333333;
+	color: #e5e5e5;
+}
+
+.shopper-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.shopper-table td, .shopper-table th {
+	padding: .5rem;
+	text-align: left;
+	border: 1px solid #444444;
+}
+
+.shopper-table tr:nth-child(even) {
+	background-color: #333333;
 }
 
 /* MEDIA QUERY MD */
