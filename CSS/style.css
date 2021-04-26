@@ -145,6 +145,22 @@ a:visited {
 	transition: all .3s ease-in-out;
 }
 
+.half-card {
+	margin: 0 auto 1rem;
+	padding: 1rem;
+	border-radius: 8px;
+	transition: all .3s ease-in-out;
+}
+
+.half-card:hover {
+	-webkit-box-shadow: 0px 0px 16px 8px rgba(0,0,0,0.24);
+	-moz-box-shadow: 0px 0px 16px 8px rgba(0,0,0,0.24);
+	box-shadow: 0px 0px 16px 8px rgba(0,0,0,0.24);
+	transition: all .3s ease-in-out;
+	transform: scale(1.02);
+	background-color: #191919;
+}
+
 .btn-custom {
 	border: 1px solid #F42A56;
 	color: #F42A56;
@@ -181,11 +197,23 @@ p {
 	text-decoration: none;
 }
 
+.half-card a {
+	text-decoration: none;
+}
+
 .work-card a:hover {
 	color: #ffffff;
 }
 
+.half-card a:hover {
+	color: #ffffff;
+}
+
 .work-card a:visited {
+	color: #ffffff;
+}
+
+.half-card a:visited {
 	color: #ffffff;
 }
 
